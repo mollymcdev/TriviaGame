@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div id="main-body" class="card-body">
+                        <h2>Welcome to Trivia!</h2>
+                        <br>
+                        <input type="button" id="startButton" value="Click to Start!">
+                        <br>
+                        <div id="timer">
+
+                        </div>
+
+                        <form id="quiz" name="quiz">
+
+                            <p>What happened to British street artist Banksy's 'Girl with Balloon'
+                                when it sold for $1.4 million at auction in 2018?</p>
+                            <div id="question1">
+                                <input type="radio" id="option1A" name="question1" value="It was stolen"> It was Stolen
+                                <input type="radio" id="option1B" name="question1" value="It shredded itself"> It
+                                shredded itself
+                                <input type="radio" id="option1C" name="question1" value="It turned out to be a fake">
+                                It turned out
+                                to be a fake
+                            </div>
+                            <br>
+                            <p>Who was the captain of the Mayflower when it took the Pilgrims to New
+                                England in 1620?</p>
+                            <input type="radio" id="option2A" name="question2" value="Christopher Jones"> Christopher
+                            Jones
+                            <input type="radio" id="option2B" name="question2" value="Christopher Columbus">
+                            Christopher Columbus
+                            <input type="radio" id="option2C" name="question2" value="Christopher Wren"> Christopher
+                            Wren
+
+                            <br>
+                            <p>Who holds the record for the most home runs in a single major league
+                                baseball season?</p>
+                            <input type="radio" id="option3A" name="question3" value="Barry Bonds"> Barry Bonds
+                            <input type="radio" id="option3B" name="question3" value="Babe Ruth"> Babe Ruth
+                            <input type="radio" id="option3C" name="question3" value="Willie Mays"> Willie Mays
+
+                            <br>
+                            <p>What popular Disney movie is set near Salem, Massachusetts in the
+                                years 1693 and 1993?</p>
+                            <input type="radio" id="option4A" name="question4" value="Halloweentown"> Halloweentown
+                            <input type="radio" id="option4B" name="question4" value="The Nightmare Before Christmas">
+                            The
+                            Nightmare Before Christmas
+                            <input type="radio" id="option4C" name="question4" value="Hocus Pocus"> Hocus Pocus
+
+                            <br>
+                            <p>Who was the king of Britain during the American revolutionary war?</p>
+                            <input type="radio" id="option5A" name="question5" value="Edward VII"> Edward VII
+                            <input type="radio" id="option5B" name="question5" value="William III"> William III
+                            <input type="radio" id="option5C" name="question5" value="George III"> George III
+                            <br><br>
+                            <input type="button" id="doneButton" value="Done">
+                        </form>
+
+                        <div id="results">
+                            <p id="correctAnswers"></p>
+                            <p id="incorrectAnswers"></p>
+                            <p id="unanswered"></p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
