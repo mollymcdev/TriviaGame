@@ -10,6 +10,11 @@ body {
 
 #main-body {
     text-align: center;
+    padding: 20px 20px 20px 20px;
+}
+
+#main-container {
+    margin: 50px 0px 50px 0px;
 }
 
 

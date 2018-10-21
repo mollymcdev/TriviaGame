@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     var correctAnswers = 0;
     var incorrectAnswers = 0;
-    var unansweredQuestions = 0;
+    var unansweredQuestions = 5;
 
     var timeLeft = 60;
     var intervalId;
@@ -51,10 +51,12 @@ $(document).ready(function () {
 
         if (response1[1].checked) {
             correctAnswers++;
+            unansweredQuestions--;
             console.log("correct:" + correctAnswers);
             console.log("unanswered: " + unansweredQuestions)
         } else if (response1[0].checked || response1[2].checked) {
             incorrectAnswers++;
+            unansweredQuestions--;
             console.log("incorrect: " + incorrectAnswers)
             console.log("unanswered: " + unansweredQuestions)
         } 
@@ -68,10 +70,12 @@ $(document).ready(function () {
 
         if (response2[0].checked) {
             correctAnswers++;
+            unansweredQuestions--;
             console.log("correct:" + correctAnswers);
             console.log("unanswered: " + unansweredQuestions)
         } else if (response2[1].checked || response2[2].checked) {
             incorrectAnswers++;
+            unansweredQuestions--;
             console.log("incorrect: " + incorrectAnswers)
             console.log("unanswered: " + unansweredQuestions)
         } 
@@ -85,10 +89,12 @@ $(document).ready(function () {
 
         if (response3[0].checked) {
             correctAnswers++;
+            unansweredQuestions--;
             console.log("correct:" + correctAnswers);
             console.log("unanswered: " + unansweredQuestions)
         } else if (response3[1].checked || response3[2].checked) {
             incorrectAnswers++;
+            unansweredQuestions--;
             console.log("incorrect: " + incorrectAnswers)
             console.log("unanswered: " + unansweredQuestions)
         } 
@@ -102,10 +108,12 @@ $(document).ready(function () {
 
         if (response4[2].checked) {
             correctAnswers++;
+            unansweredQuestions--;
             console.log("correct:" + correctAnswers);
             console.log("unanswered: " + unansweredQuestions)
         } else if (response4[0].checked || response4[1].checked) {
             incorrectAnswers++;
+            unansweredQuestions--;
             console.log("incorrect: " + incorrectAnswers)
             console.log("unanswered: " + unansweredQuestions)
         } 
@@ -119,10 +127,12 @@ $(document).ready(function () {
 
         if (response5[2].checked) {
             correctAnswers++;
+            unansweredQuestions--;
             console.log("correct:" + correctAnswers);
             console.log("unanswered: " + unansweredQuestions)
         } else if (response5[0].checked || response5[1].checked) {
             incorrectAnswers++;
+            unansweredQuestions--;
             console.log("incorrect: " + incorrectAnswers)
             console.log("unanswered: " + unansweredQuestions)
         } 
